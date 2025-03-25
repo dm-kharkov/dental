@@ -1,0 +1,1 @@
+export const VIRTUAL_TOUR_TITLE = 'усі послуги в одному місці'

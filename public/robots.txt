@@ -1,0 +1,11 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /dashboard
+
+# Host
+Host: https://dobra-stomatolohiia.vercel.app/
+
+# Sitemaps
+Sitemap: https://dobra-stomatolohiia.vercel.app/sitemap.xml

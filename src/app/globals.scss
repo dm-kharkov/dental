@@ -1,0 +1,101 @@
+@use "tailwindcss";
+@import 'lenis/dist/lenis.css';
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --green-light: #00c951;
+  --green-base: rgb(0, 59, 29);
+  --green-dark: #01180d;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  background-color: var(--green-dark);
+}
+
+/* FONTS */
+.font-comfortaa {
+  font-family: var(--font-comfortaa), Verdana, sans-serif;
+}
+
+.font-gothic {
+  font-family: var(--font-gothic), Verdana, sans-serif;
+}
+
+/* TEXT */
+.text-highlight {
+  position: relative;
+  text-shadow: 0 0 5px #000;
+
+  &::before {
+    content: '';
+    width: 110%;
+    height: 30%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--green-light);
+    z-index: -1;
+  }
+}
+
+.hover-animation-line {
+  position: relative;
+  z-index: 1;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--green-light);
+    transform-origin: right;
+    transition: transform 0.735s cubic-bezier(0.62, 0.05, 0.01, 0.99);
+    transform: scaleX(0);
+    will-change: transform;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    &::after {
+      transform-origin: left;
+      transform: scaleX(1);
+    }
+  }
+}
+
+/* ----------------------- */
+.text-wave-underline {
+  line-height: 1.2;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transform: translateY(0);
+    background: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 10" preserveAspectRatio="none"><path d="M0 5 Q 25 10, 50 5 T 100 5 T 150 5 T 200 5" stroke="rgb(0 201 81)" stroke-width="3" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1
+  }
+}

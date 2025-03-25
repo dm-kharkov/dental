@@ -1,0 +1,37 @@
+.smile-list {
+  display: flex;
+  align-items: center;
+
+  img {
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:nth-child(3n + 1) {
+      transform: rotate(-8deg) translateY(10px);
+      z-index: 1;
+    }
+
+    &:nth-child(3n + 2) {
+      transform: rotate(5deg) translateY(-15px);
+      z-index: 2;
+      margin-left: -20px;
+    }
+
+    &:nth-child(3n + 3) {
+      transform: rotate(-3deg) translateY(5px);
+      z-index: 3;
+      margin-left: -15px;
+    }
+
+    &:nth-child(5) {
+      transform: rotate(10deg) translateY(-8px);
+      z-index: 4;
+    }
+  
+    &:nth-child(7) {
+      transform: rotate(-12deg) translateY(12px);
+      z-index: 2;
+    }
+  }
+}
