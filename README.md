@@ -1,4 +1,4 @@
-# monochroMotion
+# Dobra Stomatolohiia
 
 ## Installation
 
@@ -22,13 +22,9 @@ completes, you can start the application.
 
 Use on of the following commands, to start local development server:
 ```bash
+make
+# or
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Starts the process of compiling and assembling the application from source code.
