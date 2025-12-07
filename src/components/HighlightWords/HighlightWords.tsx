@@ -1,8 +1,6 @@
 import type { ReactElement } from 'react'
 import type { HighlightWordsProps } from '@/constants/interfaces'
 
-import React from 'react'
-
 const HighlightWords = (
   {
     className = '',

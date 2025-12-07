@@ -1,7 +1,6 @@
 import type { ReactElement } from 'react'
 
 import clsx from 'clsx'
-import React from 'react'
 
 import AnimatedEntrance from '@/components/AnimatedEntrance'
 import {

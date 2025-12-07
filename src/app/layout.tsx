@@ -2,7 +2,6 @@ import type { ReactElement } from 'react'
 import { Metadata } from 'next'
 import type { ChildrenProps } from '@/constants/interfaces'
 
-import React from 'react'
 import clsx from 'clsx'
 
 import {

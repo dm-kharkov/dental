@@ -2,7 +2,7 @@
   "name": "dobra-stomatolohiia",
   "title": "Добра Стоматологія",
   "description": "Індивідуальний підхід до кожного зуба",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "private": true,
   "scripts": {
     "dev": "next dev -p 8000",
